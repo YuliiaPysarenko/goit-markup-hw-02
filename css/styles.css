@@ -1,0 +1,382 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    /* display: block; */
+    margin: 0;
+}
+
+:root {
+    --brand-color: #2196F3;
+    --basic-text: #000;
+    --main-text: #fff;
+    --section-text: #212121;
+    --additional-text: #757575;
+    --team-section-background: #F5F4FA;
+    --light-background: #fff;
+    --dark-background: #2F303A;
+    --address-link: rgba(255, 255, 255, 0.6);
+    --header-border: #ECECEC;
+    --font-weight-bold: bold;
+    --additional-text-size: ;
+}
+
+/* header */
+
+header {
+    border: 1px var(--header-border);
+    border-style: solid;
+}
+
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+nav {
+    display: inline;
+}
+
+.logo {
+    font-family: Raleway;
+    font-weight: var(--font-weight-bold);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--basic-text);
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--brand-color);
+}
+
+.site-nav {
+    margin-left: 43px;
+    display: inline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--section-text);
+}
+
+.auth-nav {
+    margin-left: 331px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: inline;
+}
+
+.auth-nav .link {
+    color: var(--additional-text);
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    font-style: normal;
+}
+
+.header-list-item {
+    display: inline;
+    margin-left: 50px;
+}
+
+.auth-nav > .header-list-item:first-child {
+    margin-left: 0;
+}
+
+.link {
+    color: var(--basic-text);
+    text-decoration: none;
+}
+
+.link:hover, 
+.link:focus {
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+/* header end */
+
+
+/* hero section */
+
+.hero {
+    width: 100%;
+    height: 600px;
+    background-color: var(--dark-background);
+    display: inline-block;
+}
+
+.hero-container {
+    width: 700px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-text);
+}
+
+.hero-button {
+    font-family: inherit;
+    background-color: var(--brand-color);
+    color: var(--main-text);
+    width: 200px;
+    height: 50px;
+    font-weight: var(--font-weight-bold);
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--light-background);
+    color: var(--brand-color);
+}
+
+/* hero section end */
+
+
+/* benefits */
+
+.section-title {
+    font-weight: var(--font-weight-bold);
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--section-text);
+}
+
+.hidden {
+    display: none;
+    font-size: 1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.benefits-section {
+    padding-top: 50px;
+    margin: 0;
+}
+
+.list-item {
+    display: inline-block;
+    margin-left: 30px;
+    width: 270px;
+}
+
+.list-item:first-child {
+    margin-left: 0;
+}
+
+.benefit-item {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--section-text);
+}
+
+.benefit-text {
+    display: inline;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--additional-text);
+}
+
+/* benefits end */
+
+
+/* activity */
+
+.activity-section {
+    padding: 30px 0 60px 0;
+}
+
+.activity-item {
+    display: inline-block;
+    margin-left: 30px;
+    width: 370px;
+}
+
+.activity-item:first-child {
+    margin-left: 0;
+}
+
+/* activity end */
+
+
+/* team section */
+
+.team-section {
+    background-color: var(--team-section-background);
+    padding: 50px 0 60px 0;
+}
+
+.team-card {
+    display: inline-block;
+    margin: 15px;
+    width: 270px;
+    background-color: var(--light-background);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.team-card:first-child {
+    margin-left: 0;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--section-text);
+}
+
+.member-profession {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--additional-text);
+    margin-bottom: 30px;
+}
+
+/* team section end */
+
+
+/* footer  */
+
+footer {
+    background-color: var(--dark-background);
+    padding: 45px 30px;
+}
+
+footer .logo {
+    color: var(--main-text);
+}
+
+.address-item {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+    padding-top: 10px;
+}
+
+.address-item .link {
+    color: var(--address-link);
+}
+
+.address-item .link:hover, 
+.address-item .link:focus {
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+/* footer end  */
+
+/* portfolio page  */
+
+.portfolio-button {
+    font-family: inherit;
+    background-color: var(--team-section-background);
+    color: var(--section-text);
+    font-weight: var(--font-weight-bold);
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--brand-color);
+    color: var(--main-text);
+}
+
+.filter-list {
+    margin: 30px 0;
+    padding: 0;
+}
+
+.filter {
+    display: inline;
+    text-align: center;
+    margin: 4px;
+}
+
+.portfolio-container {
+    width: 1200px;
+    margin: 0 auto 147px auto;
+    text-align: center;
+}
+
+.portfolio-card {
+    display: inline-block;
+    margin: 10px;
+    width: 370px;
+    height: 404px;
+    background-color: var(--light-background);
+    border: 1px solid #EEEEEE;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.portfolio-title {
+    margin: 20px 24px 0 24px;
+    font-weight: var(--font-weight-bold);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--section-text);
+}
+
+.portfolio-short {
+    margin: 0 24px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--additional-text);
+}
+
+/* portfolio end */
