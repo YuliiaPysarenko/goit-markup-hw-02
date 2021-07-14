@@ -379,4 +379,8 @@ footer .logo {
     color: var(--additional-text);
 }
 
+.card-link {
+    text-decoration: none;
+}
+
 /* portfolio end */
