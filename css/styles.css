@@ -322,7 +322,7 @@ footer .logo {
     font-family: inherit;
     background-color: var(--team-section-background);
     color: var(--section-text);
-    font-weight: var(--font-weight-bold);
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
