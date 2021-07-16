@@ -101,6 +101,10 @@ nav {
     text-decoration: none;
 }
 
+.current {
+    color: var(--brand-color);
+}
+
 /* header end */
 
 
